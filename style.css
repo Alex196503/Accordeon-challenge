@@ -1,0 +1,146 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+    background-image: url('background-pattern-desktop.svg');
+    background-size:contain;
+    background-position: top;
+    font-size:16px;
+    background-color: hsl(275, 100%, 97%);
+    background-repeat: no-repeat;
+    color:black;
+    font-family: 'Work Sans', sans-serif;
+    line-height: 1.3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@font-face{
+    font-family: MyFont;
+    src:url('WorkSans-Bold.ttf');
+}
+.main{
+    margin-top:20px;
+    background-color: hsl(0, 100%, 100%);
+    min-width:380px;
+    padding:20px;
+    border-radius: 13px;
+    box-shadow: 3px 10px 30px hsl(292, 16%, 49%);
+    width: 35%;
+    min-height:320px;
+}
+.main .section1{
+    margin-left: 9px;
+    display: flex;
+    padding:10px;
+    flex-direction: row;
+    gap:9px;
+}
+.section1 img{
+    margin-top:14px;
+    object-fit: contain;
+    object-position: center;
+    width:37px;
+    height:37px;
+}
+.section1 h1{
+    margin-left: 7px;
+    font-size:3.2em;
+    font-family: 'MyFont', sans-serif;
+    margin-bottom: 7px;
+}
+@font-face 
+{
+    font-family: secondFont;
+    src:url('WorkSans-SemiBold.ttf');
+}
+hr{
+    border-top: 1px solid rgb(228, 244, 250);
+    width:93%;
+    margin-left:18px;
+    
+}
+section {
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+    padding:6px;
+    margin-left: 13px;
+}
+section h3{
+    font-size:1em;
+    color:hsl(292, 42%, 14%);
+    font-family:'secondFont', sans-serif;
+}
+section h3:hover{
+    cursor: pointer;
+    color:rgb(183, 20, 183);
+}
+@font-face{
+    src:url('WorkSans-Regular.ttf');
+    font-family: thirdFont;
+}
+.part{
+    display: flex;
+    width: auto;
+    position: relative;
+    height: auto;
+    flex-direction: row;
+    align-items: center;
+    gap:20px;
+} 
+.section2 img{
+    object-fit: contain;
+    object-position:top;
+    margin-left:22px;
+}
+p{
+    margin-top:10px;
+    font-size:0.9em;
+    text-wrap: pretty;
+    font-family: 'thirdFont', sans-serif;
+    color:hsl(292, 16%, 49%);
+}
+.star{
+    position: absolute;
+    right:0;
+    top:0;
+}
+section img:hover{
+    cursor: pointer;
+}
+.part{
+    margin-bottom: 13px;
+    margin-top:10px;
+}
+.hidden{
+    display: none;
+}
+@media(max-width:750px)
+{
+    body{
+        background-image: url('background-pattern-mobile.svg');
+        position: relative;
+    }
+    .main{
+        margin:0;
+        position: absolute;
+        top:25%;
+    }
+    .section2 p{
+        margin-right: 25px;
+        text-wrap: stable;
+    }
+    .section3 h3, .section4 h3, .section5 h3{
+        text-wrap: balance;
+    }
+}
+@media(max-width:1125px)
+{
+    .section3 h3, .section4 h3, .section5 h3{
+        text-wrap: balance;
+    }
+}
